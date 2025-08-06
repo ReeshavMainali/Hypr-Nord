@@ -1,0 +1,254 @@
+/* Nord Color Palette */
+/* Polar Night */
+/* #2e3440 #3b4252 #434c5e #4c566a */
+/* Snow Storm */
+/* #d8dee9 #e5e9f0 #eceff4 */
+/* Frost */
+/* #8fbcbb #88c0d0 #81a1c1 #5e81ac */
+/* Aurora */
+/* #bf616a #d08770 #ebcb8b #a3be8c #b48ead */
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "ComicShannsMono Nerd Font", "Symbols Nerd Font Mono";
+  font-size: 16px;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+window#waybar {
+  background-color: rgba(46, 52, 64, 0.9);
+  border-radius: 12px;
+  color: #e5e9f0;
+  transition: background-color 0.2s ease;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+/* Tooltips */
+tooltip {
+  background: rgba(46, 52, 64, 0.95);
+  border-radius: 8px;
+  border: 1px solid #4c566a;
+  color: #e5e9f0;
+}
+
+tooltip label {
+  color: #e5e9f0;
+}
+
+/* Left modules */
+#custom-launcher {
+  background-color: #5e81ac;
+  color: #eceff4;
+  border-radius: 8px 0 0 8px;
+  padding: 0 15px;
+  margin: 4px 0 4px 8px;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+#custom-launcher:hover {
+  background-color: #81a1c1;
+  color: #2e3440;
+}
+
+#workspaces {
+  background-color: #3b4252;
+  border-radius: 8px;
+  margin: 4px 8px;
+  padding: 0 8px;
+}
+
+#workspaces button {
+  padding: 0 8px;
+  color: #d8dee9;
+  background-color: transparent;
+  border-radius: 6px;
+  margin: 2px;
+  transition: all 0.3s ease;
+  min-width: 30px;
+}
+
+#workspaces button:hover {
+  background-color: #4c566a;
+  color: #eceff4;
+}
+
+#workspaces button.active {
+  background-color: #88c0d0;
+  color: #2e3440;
+  font-weight: bold;
+}
+
+#workspaces button.urgent {
+  background-color: #bf616a;
+  color: #eceff4;
+}
+
+#window {
+  background-color: #434c5e;
+  border-radius: 8px;
+  margin: 4px 8px;
+  padding: 0 15px;
+  color: #d8dee9;
+  font-weight: 500;
+}
+
+/* Center modules */
+#clock {
+  background: linear-gradient(135deg, #8fbcbb, #88c0d0);
+  color: #2e3440;
+  border-radius: 8px;
+  padding: 0 20px;
+  margin: 4px 8px;
+  font-weight: bold;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+#clock:hover {
+  background: linear-gradient(135deg, #88c0d0, #81a1c1);
+}
+
+/* Right modules */
+#cpu,
+#memory,
+#temperature,
+#network,
+#backlight,
+#pulseaudio,
+#battery {
+  background-color: #434c5e;
+  color: #e5e9f0;
+  border-radius: 8px;
+  padding: 0 12px;
+  margin: 4px 4px;
+  transition: all 0.3s ease;
+}
+
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#network:hover,
+#backlight:hover,
+#pulseaudio:hover,
+#battery:hover {
+  background-color: #4c566a;
+}
+
+/* Specific module colors */
+#cpu {
+  background-color: #b48ead;
+  color: #2e3440;
+}
+
+#memory {
+  background-color: #a3be8c;
+  color: #2e3440;
+}
+
+#temperature {
+  background-color: #ebcb8b;
+  color: #2e3440;
+}
+
+#temperature.critical {
+  background-color: #bf616a;
+  color: #eceff4;
+  animation: blink 0.5s linear infinite alternate;
+}
+
+@keyframes blink {
+  to {
+    background-color: #d08770;
+  }
+}
+
+#network {
+  background-color: #81a1c1;
+  color: #2e3440;
+}
+
+#network.disconnected {
+  background-color: #bf616a;
+  color: #eceff4;
+}
+
+#backlight {
+  background-color: #d08770;
+  color: #2e3440;
+}
+
+#pulseaudio {
+  background-color: #8fbcbb;
+  color: #2e3440;
+}
+
+#pulseaudio.muted {
+  background-color: #bf616a;
+  color: #eceff4;
+}
+
+#battery {
+  background-color: #a3be8c;
+  color: #2e3440;
+}
+
+#battery.charging {
+  background-color: #88c0d0;
+  animation: charging 2s linear infinite;
+}
+
+@keyframes charging {
+  0% { background-color: #88c0d0; }
+  50% { background-color: #8fbcbb; }
+  100% { background-color: #88c0d0; }
+}
+
+#battery.warning:not(.charging) {
+  background-color: #ebcb8b;
+  color: #2e3440;
+}
+
+#battery.critical:not(.charging) {
+  background-color: #bf616a;
+  color: #eceff4;
+  animation: blink 0.5s linear infinite alternate;
+}
+
+#tray {
+  background-color: #3b4252;
+  border-radius: 8px;
+  margin: 4px 8px;
+  padding: 0 8px;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: #bf616a;
+}
+
+#custom-power {
+  background-color: #bf616a;
+  color: #eceff4;
+  border-radius: 0 8px 8px 0;
+  padding: 0 15px;
+  margin: 4px 8px 4px 0;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#custom-power:hover {
+  background-color: #d08770;
+  color: #2e3440;
+}

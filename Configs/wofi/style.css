@@ -1,0 +1,133 @@
+/* Nord Color Palette - matching Waybar and wlogout */
+/* Polar Night: #2e3440 #3b4252 #434c5e #4c566a */
+/* Snow Storm: #d8dee9 #e5e9f0 #eceff4 */
+/* Frost: #8fbcbb #88c0d0 #81a1c1 #5e81ac */
+
+* {
+    font-family: "ComicShannsMono Nerd Font";
+    font-size: 14px;
+}
+
+window {
+    margin: 0px;
+    border: 2px solid #4c566a;
+    background-color: rgba(46, 52, 64, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+#input {
+    padding: 12px 20px;
+    margin: 12px;
+    border: 2px solid #434c5e;
+    color: #e5e9f0;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: #3b4252;
+    outline: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#input:focus {
+    border: 2px solid #88c0d0;
+    background-color: #434c5e;
+    color: #eceff4;
+    box-shadow: 0 0 0 2px rgba(136, 192, 208, 0.2);
+}
+
+#input image {
+    color: #81a1c1;
+}
+
+#inner-box {
+    margin: 8px;
+    padding: 8px;
+    border: none;
+    color: #e5e9f0;
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+#outer-box {
+    margin: 0px;
+    border: none;
+    border-radius: 12px;
+    background-color: transparent;
+}
+
+#scroll {
+    margin: 0px 12px 12px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+#entry {
+    padding: 8px 12px;
+    margin: 2px 0px;
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+    transition: all 0.2s ease;
+}
+
+#entry:hover {
+    background-color: #3b4252;
+}
+
+#entry:selected {
+    background: linear-gradient(135deg, #88c0d0, #81a1c1);
+    color: #2e3440;
+    font-weight: bold;
+}
+
+#entry:selected #text {
+    color: #2e3440;
+    font-weight: bold;
+}
+
+#text {
+    color: #e5e9f0;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: middle;
+}
+
+#text:selected {
+    color: #2e3440;
+    font-weight: bold;
+}
+
+#img {
+    margin-right: 12px;
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+#img:selected {
+    background-color: transparent;
+}
+
+/* Custom scrollbar to match theme */
+scrollbar {
+    background-color: transparent;
+    border-radius: 6px;
+    width: 8px;
+}
+
+scrollbar slider {
+    background-color: #4c566a;
+    border-radius: 6px;
+    border: none;
+}
+
+scrollbar slider:hover {
+    background-color: #5e81ac;
+}
+
+scrollbar slider:active {
+    background-color: #81a1c1;
+}

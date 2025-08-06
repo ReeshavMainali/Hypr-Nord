@@ -1,0 +1,48 @@
+[global]
+# Global Settings
+monitor = 0
+font = JetBrainsMono Nerd Font 15
+ellipsize = yes
+corner_radius = 10
+transparency = 10
+
+# Geometry
+geometry = "300x50-10+50"
+width = (300, 300)
+height = (50, 50)
+
+# Colors
+frame_width = 1
+frame_color = "#81a1c1"
+separator_height = 2
+separator_color = frame
+
+# Text and Behavior
+word_wrap = yes
+show_age_always = true
+ignore_dbus_close = false
+startup_notification = false
+close_on_click = true
+
+[urgency_low]
+# Low Urgency Notifications
+background = "#3b4252"
+foreground = "#a3be8c"
+timeout = 3
+
+[urgency_normal]
+# Normal Urgency Notifications
+background = "#3b4252"
+foreground = "#81a1c1"
+timeout = 5
+
+[urgency_critical]
+# Critical Urgency Notifications
+background = "#3b4252"
+foreground = "#bf616a"
+timeout = 0 # Never timeout
+
+[shortcuts]
+close = "dunstctl close"
+close_all = "dunstctl close-all"
+history = "dunstctl history"
