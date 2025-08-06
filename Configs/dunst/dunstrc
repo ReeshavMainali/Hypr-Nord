@@ -1,7 +1,7 @@
 [global]
 # Global Settings
 monitor = 0
-font = JetBrainsMono Nerd Font 15
+font = ComicShannsMono Nerd Font 15
 ellipsize = yes
 corner_radius = 10
 transparency = 10
