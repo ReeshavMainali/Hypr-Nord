@@ -112,7 +112,7 @@ install_hypr_nord() {
     # Copy Wallpapers folder to ~/Pictures
     echo "Copying Wallpapers to ~/Pictures..."
     mkdir -p ~/Pictures || { echo "Error: Failed to create ~/Pictures directory."; exit 1; }
-    cp -r Wallpapers/* ~/Pictures/ || { echo "Error: Failed to copy wallpapers."; exit 1; }
+    cp -r Wallpapers/ ~/Pictures/ || { echo "Error: Failed to copy wallpapers."; exit 1; }
     echo "Wallpapers copied."
 
     echo "Installation script finished."
