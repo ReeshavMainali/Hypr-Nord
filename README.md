@@ -76,3 +76,11 @@ After the script completes, it is recommended to:
 *   **Reboot (Optional but Recommended)**: A full system reboot can help ensure all changes, especially those related to themes, icons, and fonts, are fully applied.
 
 If you encounter any issues during the installation, please review the error messages provided by the script.
+
+## Final Desktop Appearance
+
+Here are screenshots of what your desktop will look like after a successful installation:
+
+![Screenshot 1](Assets/1.png)
+![Screenshot 2](Assets/2.png)
+![Screenshot 3](Assets/3.png)
