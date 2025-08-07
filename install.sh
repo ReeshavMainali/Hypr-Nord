@@ -31,7 +31,7 @@ install_hypr_nord() {
 
     if ! grep -q "chaotic-aur" /etc/pacman.conf; then
         echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf &> /dev/null
-        echo "Server = https://eu.mirror.chaotic.cx/\$repo/\$arch" | sudo tee /etc/pacman.d/chaotic-mirrorlist &> /dev/null
+        #echo "Server = https://eu.mirror.chaotic.cx/\$repo/\$arch" | sudo tee /etc/pacman.d/chaotic-mirrorlist &> /dev/null
         echo "Chaotic-AUR repository added to pacman.conf and mirrorlist created."
     else
         echo "Chaotic-AUR repository already exists in pacman.conf."
